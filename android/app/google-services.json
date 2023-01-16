@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "226919371628",
+    "project_id": "paix-380-2972c",
+    "storage_bucket": "paix-380-2972c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226919371628:android:08fe6851a801f6aa7b1949",
+        "android_client_info": {
+          "package_name": "com.example.paix_380"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226919371628-0h2r8c65ch372upnrao167lvb9qn358m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt2k9473QiGlZNURJU6DpcYBQXlJkjb5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226919371628-0h2r8c65ch372upnrao167lvb9qn358m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
