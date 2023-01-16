@@ -12,7 +12,7 @@ class AllFavourites extends StatefulWidget {
 }
 
 class _FavoritiesState extends State<AllFavourites> {
-  final snapshots = FirebaseFirestore.instance
+  final Stream<QuerySnapshot<Map<String, dynamic>>> snapshots = FirebaseFirestore.instance
       .collection('favourites')
       .where('userId', isNotEqualTo: FirebaseAuth.instance.currentUser!.uid)
       .snapshots();
