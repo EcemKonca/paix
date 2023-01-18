@@ -17,7 +17,6 @@ class _CreditCardState extends State<CreditCard> {
   String cardHolderName = "";
   String cvvCode = "";
   bool isCvvFocused = false;
-  OutlineInputBorder? border; // can be deleted
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   Future<void> saveInformation() async {
@@ -38,17 +37,6 @@ class _CreditCardState extends State<CreditCard> {
   }
 
   @override
-  void initState() {
-    border = OutlineInputBorder(
-      borderSide: BorderSide(
-        color: Colors.grey.withOpacity(0.7),
-        width: 0.5,
-      ),
-    );
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -58,13 +46,13 @@ class _CreditCardState extends State<CreditCard> {
       body: Container(
         decoration: const BoxDecoration(
             gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              colors: [
-                Colors.blue,
-                Colors.orange,
-              ],
-            )),
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [
+            Colors.blue,
+            Colors.orange,
+          ],
+        )),
         child: SafeArea(
           child: Column(
             children: <Widget>[

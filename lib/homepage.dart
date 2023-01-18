@@ -4,7 +4,6 @@ import 'package:paix_380/cart.dart';
 import 'package:paix_380/dress.dart';
 import 'package:paix_380/favorites.dart';
 import 'package:paix_380/creditCard.dart';
-import 'package:paix_380/main.dart';
 import 'package:paix_380/address.dart';
 import 'package:paix_380/clothes_model.dart';
 import 'package:paix_380/bag.dart';
@@ -113,10 +112,9 @@ class _HomepageState extends State<Homepage> {
                   content: Text("LOGGED OUT"),
                   duration: Duration(seconds: 1),
                 ));
-               // Navigator.popUntil(context,ModalRoute.withName(Navigator.defaultRouteName));
-                Navigator.of(context).push(
-                   MaterialPageRoute(builder: (context) => const HomePage()));
-              },
+                FocusScope.of(context).unfocus();
+                Navigator.popUntil(context,ModalRoute.withName(Navigator.defaultRouteName));
+               },
             )
           ],
         ),
@@ -231,7 +229,7 @@ class _HomepageState extends State<Homepage> {
                 const SizedBox(
                   height: 10,
                 ),
-                 const ListOfClothes()
+                const ListOfClothes()
               ],
             ),
           ),
