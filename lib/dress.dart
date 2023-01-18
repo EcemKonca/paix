@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:paix_380/homepage.dart';
 import 'package:paix_380/cart.dart';
-import 'package:paix_380/Favorites.dart';
+import 'package:paix_380/favorites.dart';
 import 'package:paix_380/profile.dart';
 import 'clothes_details.dart';
 import 'clothes_model.dart';

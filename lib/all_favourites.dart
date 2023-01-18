@@ -8,14 +8,15 @@ class AllFavourites extends StatefulWidget {
   static List<Clothes> favList = [];
 
   @override
-  State<AllFavourites> createState() => _FavoritiesState();
+  State<AllFavourites> createState() => _AllFavouritesState();
 }
 
-class _FavoritiesState extends State<AllFavourites> {
-  final Stream<QuerySnapshot<Map<String, dynamic>>> snapshots = FirebaseFirestore.instance
-      .collection('favourites')
-      .where('userId', isNotEqualTo: FirebaseAuth.instance.currentUser!.uid)
-      .snapshots();
+class _AllFavouritesState extends State<AllFavourites> {
+  final Stream<QuerySnapshot<Map<String, dynamic>>> snapshots =
+      FirebaseFirestore.instance
+          .collection('favourites')
+          .where('userId', isNotEqualTo: FirebaseAuth.instance.currentUser!.uid)
+          .snapshots();
 
   @override
   Widget build(BuildContext context) {
@@ -54,14 +55,12 @@ class _FavoritiesState extends State<AllFavourites> {
                               Text(
                                 document['name'],
                                 style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18),
+                                    fontWeight: FontWeight.bold, fontSize: 18),
                               ),
                               Text(
                                 '${document['price']} TL',
                                 style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 18),
+                                    fontWeight: FontWeight.bold, fontSize: 18),
                               ),
                             ]),
                         subtitle: Row(

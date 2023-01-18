@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'clothes_model.dart';
 import 'package:paix_380/cart.dart';
-import 'package:paix_380/Favorites.dart';
+import 'package:paix_380/favorites.dart';
 
 class ClothesDetails extends StatefulWidget {
   const ClothesDetails({Key? key, required this.clothes}) : super(key: key);

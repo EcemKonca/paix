@@ -135,10 +135,5 @@ class _NewPasswordState extends State<NewPassword> {
         content: Text("Password is not changed"),
       ));
     }
-    final user = FirebaseAuth.instance.currentUser!;
-    FirebaseFirestore.instance
-        .collection('users')
-        .doc(user.uid)
-        .update({'Password': newPassword});
   }
 }

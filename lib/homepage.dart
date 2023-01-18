@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:paix_380/cart.dart';
 import 'package:paix_380/dress.dart';
-import 'package:paix_380/Favorites.dart';
+import 'package:paix_380/favorites.dart';
 import 'package:paix_380/creditCard.dart';
 import 'package:paix_380/main.dart';
 import 'package:paix_380/address.dart';
@@ -164,7 +164,7 @@ class _HomepageState extends State<Homepage> {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [
-              Colors.pink,
+              Colors.orange,
               Colors.indigoAccent,
             ],
           )),
