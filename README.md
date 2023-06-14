@@ -1,7 +1,6 @@
 # paix_380
 
-A new Flutter project.
-
+This project is implemented in Flutter using Dart language. It is an e-commerce application project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
